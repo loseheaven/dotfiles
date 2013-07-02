@@ -18,7 +18,7 @@ function parse_git_branch {
 }
 
 function show_git_branch {
-  PS1="[\u@RMBP:\w\e[0;32m$(parse_git_branch)\e[0m\$ "
+  PS1="\u@RMBP:\w\[\e[0;32m\]$(parse_git_branch)\[\e[0m\]\$ "
 }
 
 PROMPT_COMMAND=show_git_branch
